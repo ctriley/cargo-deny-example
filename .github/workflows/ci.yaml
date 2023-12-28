@@ -2,7 +2,7 @@ name: CI
 on: [push, pull_request]
 defaults:
   run:
-    workspace: ./rust-app
+    working-directory: ./rust-app
 jobs:
   cargo-deny:
     runs-on: ubuntu-22.04
